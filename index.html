@@ -20,7 +20,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
+
+  <!-- Critical HUD Viewfinder Centering Style -->
+  <style>
+    .viewfinder-img {
+      width: 100% !important;
+      height: 350px !important;
+      object-fit: cover !important;
+      object-position: center center !important;
+      display: block !important;
+    }
+    .viewfinder-corner {
+      width: 22px !important;
+      height: 22px !important;
+    }
+    .corner-tl { top: 14px !important; left: 14px !important; }
+    .corner-tr { top: 14px !important; right: 14px !important; }
+    .corner-bl { bottom: 14px !important; left: 14px !important; }
+    .corner-br { bottom: 14px !important; right: 14px !important; }
+  </style>
   
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
 </head>
@@ -142,7 +161,7 @@
               <span class="viewfinder-corner corner-bl"></span>
               <span class="viewfinder-corner corner-br"></span>
 
-              <img src="assets/images/avatar.jpg" alt="Võ Nhật Minh - Ảnh đại diện" class="viewfinder-img" width="768" height="1024">
+              <img src="assets/images/avatar.jpg?v=3" alt="Võ Nhật Minh - Ảnh đại diện" class="viewfinder-img" width="768" height="820" style="object-position: center center !important; object-fit: cover !important;">
             </div>
 
             <!-- Profile Info Metadata List -->
@@ -166,6 +185,11 @@
                 <span class="card-meta-value">
                   <a href="https://www.linkedin.com/in/minh-v%C3%B5-230518383/" target="_blank" rel="noopener noreferrer">Võ Nhật Minh</a>
                 </span>
+              </div>
+
+              <div class="card-meta-item">
+                <span class="card-meta-label">TRƯỜNG</span>
+                <span class="card-meta-value">HUTECH University</span>
               </div>
 
               <div class="card-meta-item">
@@ -197,7 +221,7 @@
           </p>
 
           <p class="about-text">
-            Với định hướng chuyên sâu vào <strong>Blue Team và giám sát an ninh mạng (SOC Tier 1/2)</strong>, tôi không ngừng rèn luyện kỹ năng thực tế qua việc xây dựng Home Lab, thực hành điều tra sự cố trên các nền tảng CTF (TryHackMe, Hack The Box), phân tích nhật ký phân tán và nghiên cứu các kỹ thuật phát hiện xâm nhập mới nhất theo khuôn khổ MITRE ATT&CK.
+            Hiện là <strong>Thành viên Nhóm Nghiên cứu Trí tuệ Nhân tạo (AI), Khoa Công nghệ Thông tin, HUTECH University</strong>, kết hợp tư duy khoa học máy tính với định hướng chuyên sâu vào <strong>Blue Team và giám sát an ninh mạng (SOC Tier 1/2)</strong>. Tôi không ngừng rèn luyện kỹ năng thực chiến qua các đấu trường CTF, xây dựng Home Lab, phân tích nhật ký phân tán và nghiên cứu các kỹ thuật phát hiện xâm nhập mới nhất theo khuôn khổ MITRE ATT&CK.
           </p>
 
           <!-- Core Domains Cards Grid -->
@@ -320,6 +344,93 @@
             <div class="stat-item">
               <div class="stat-number">100%</div>
               <div class="stat-label">Sẵn sàng tiếp nhận cơ hội Thực tập sinh</div>
+            </div>
+          </div>
+
+          <!-- Achievements & Awards Section -->
+          <div class="achievements-section">
+            <div class="achievements-header">
+              <h3 class="achievements-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+                <span>Thành tích & Giải thưởng nổi bật</span>
+              </h3>
+              <p class="achievements-subtitle">Ghi nhận học thuật, giải đấu an toàn thông tin & chứng nhận đào tạo chuyên môn.</p>
+            </div>
+
+            <div class="achievements-grid">
+              <!-- Achievement 1: HUTECH AI Research -->
+              <div class="achievement-card">
+                <div class="achievement-icon-wrapper academic">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="achievement-content">
+                  <div class="achievement-badge-line">
+                    <span class="achievement-tag tag-blue">NGHIÊN CỨU HỌC THUẬT</span>
+                    <span class="achievement-org">HUTECH University</span>
+                  </div>
+                  <h4 class="achievement-name">Nhóm Nghiên cứu Trí tuệ Nhân tạo (AI)</h4>
+                  <p class="achievement-desc">Thành viên Nhóm Nghiên cứu Trí tuệ Nhân tạo (AI), Khoa Công nghệ Thông tin, Trường Đại học Công nghệ TP.HCM (HUTECH).</p>
+                </div>
+              </div>
+
+              <!-- Achievement 2: Giải Nhì CTF K23 -->
+              <div class="achievement-card">
+                <div class="achievement-icon-wrapper silver">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="achievement-content">
+                  <div class="achievement-badge-line">
+                    <span class="achievement-tag tag-silver">GIẢI NHÌ • Á QUÂN</span>
+                    <span class="achievement-org">Capture The Flag K23</span>
+                  </div>
+                  <h4 class="achievement-name">Giải Nhì Capture The Flag (CTF) Tân Sinh Viên K23</h4>
+                  <p class="achievement-desc">Đạt Giải Nhì cuộc thi Capture The Flag (CTF) dành cho Tân sinh viên K23, giải quyết các thử thách Web, Forensic, Reverse Engineering và Cryptography.</p>
+                </div>
+              </div>
+
+              <!-- Achievement 3: PWN OPEN CTF 2024 -->
+              <div class="achievement-card">
+                <div class="achievement-icon-wrapper bronze">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <div class="achievement-content">
+                  <div class="achievement-badge-line">
+                    <span class="achievement-tag tag-amber">GIẢI KHUYẾN KHÍCH</span>
+                    <span class="achievement-org">PWN OPEN CTF 2024</span>
+                  </div>
+                  <h4 class="achievement-name">Cuộc thi PWN OPEN CTF 2024</h4>
+                  <p class="achievement-desc">Đạt Giải Khuyến khích tại cuộc thi PWN OPEN CTF 2024, tranh tài cùng các đội ngũ sinh viên và chuyên gia an toàn thông tin trên toàn quốc.</p>
+                </div>
+              </div>
+
+              <!-- Achievement 4: Synack & Cisco -->
+              <div class="achievement-card">
+                <div class="achievement-icon-wrapper cert">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="achievement-content">
+                  <div class="achievement-badge-line">
+                    <span class="achievement-tag tag-green">ĐÀO TẠO CHUYÊN MÔN</span>
+                    <span class="achievement-org">Synack & Cisco</span>
+                  </div>
+                  <h4 class="achievement-name">An Toàn Thông Tin & Nghiên Cứu Bảo Mật</h4>
+                  <p class="achievement-desc">Hoàn thành chương trình đào tạo chuyên môn về An toàn thông tin và Nghiên cứu bảo mật uy tín tại Synack và Cisco.</p>
+                </div>
+              </div>
             </div>
           </div>
 

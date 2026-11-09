@@ -612,46 +612,46 @@ button, input, textarea {
 
 .viewfinder-corner {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   pointer-events: none;
   z-index: 2;
   transition: all var(--transition-normal);
 }
 
 .corner-tl {
-  top: 10px;
-  left: 10px;
+  top: 14px;
+  left: 14px;
   border-top: 2.5px solid #ffffff;
   border-left: 2.5px solid #ffffff;
 }
 
 .corner-tr {
-  top: 10px;
-  right: 10px;
+  top: 14px;
+  right: 14px;
   border-top: 2.5px solid #ffffff;
   border-right: 2.5px solid #ffffff;
 }
 
 .corner-bl {
-  bottom: 10px;
-  left: 10px;
+  bottom: 14px;
+  left: 14px;
   border-bottom: 2.5px solid #ffffff;
   border-left: 2.5px solid #ffffff;
 }
 
 .corner-br {
-  bottom: 10px;
-  right: 10px;
+  bottom: 14px;
+  right: 14px;
   border-bottom: 2.5px solid #ffffff;
   border-right: 2.5px solid #ffffff;
 }
 
 .viewfinder-img {
   width: 100%;
-  height: 330px;
+  height: 350px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   display: block;
   transition: transform var(--transition-smooth);
 }
@@ -877,6 +877,164 @@ button, input, textarea {
   font-size: 0.8rem;
   color: var(--text-secondary);
   line-height: 1.35;
+}
+
+/* Achievements & Awards */
+.achievements-section {
+  margin-bottom: 40px;
+}
+
+.achievements-header {
+  margin-bottom: 20px;
+}
+
+.achievements-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.achievements-title svg {
+  color: #f59e0b;
+}
+
+.achievements-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.achievement-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: all var(--transition-normal);
+}
+
+.achievement-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-medium);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.achievement-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.achievement-icon-wrapper.academic {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.achievement-icon-wrapper.silver {
+  background: rgba(148, 163, 184, 0.15);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.achievement-icon-wrapper.bronze {
+  background: rgba(245, 158, 11, 0.12);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.achievement-icon-wrapper.cert {
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-badge-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.achievement-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}
+
+.achievement-tag.tag-blue {
+  background: var(--badge-blue-bg);
+  color: var(--badge-blue-text);
+  border: 1px solid var(--badge-blue-border);
+}
+
+.achievement-tag.tag-silver {
+  background: rgba(148, 163, 184, 0.15);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.achievement-tag.tag-amber {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.achievement-tag.tag-green {
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.achievement-org {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.achievement-name {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.achievement-desc {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 /* Skills Matrix */
