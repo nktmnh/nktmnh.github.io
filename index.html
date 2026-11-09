@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Võ Nhật Minh | An ninh mạng & Phòng thủ hệ thống</title>
+  <meta name="description" content="Portfolio cá nhân của Võ Nhật Minh - Sinh viên mới vào nghề An ninh mạng, tập trung vào giám sát SOC, an toàn thông tin và các hoạt động phòng thủ thực tiễn.">
+  <meta name="author" content="Võ Nhật Minh">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Võ Nhật Minh | Cybersecurity Portfolio">
+  <meta property="og:description" content="Tập trung vào giám sát SOC, an ninh mạng và các hoạt động phòng thủ thực tiễn.">
+  <meta property="og:image" content="assets/images/avatar.jpg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#about" class="brand" aria-label="Trang chủ Võ Nhật Minh">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        <span>Minh</span>
+        <span class="brand-badge">ĐỘI XANH</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link active">Giới thiệu</a>
+        <a href="#highlights" class="nav-link">Điểm nổi bật</a>
+        <a href="#projects" class="nav-link">Dự án</a>
+        <a href="#labs" class="nav-link">Phòng thí nghiệm</a>
+        <a href="#articles" class="nav-link">Bài viết</a>
+        <a href="#contact" class="nav-link">Liên hệ</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Menu) -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Chuyển đổi giao diện sáng/tối" title="Chuyển sang giao diện Sáng">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg id="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg id="moon-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Mở menu điều hướng">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Details -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span>Tuyển dụng thực tập sinh và các vị trí cấp thấp.</span>
+          </div>
+
+          <h1 class="hero-name">Võ Nhật Minh</h1>
+
+          <div class="hero-role-wrapper">
+            <span class="hero-role">Sinh viên mới vào nghề An ninh mạng</span>
+            <span class="brand-badge">ĐỘI XANH</span>
+          </div>
+
+          <p class="hero-bio">
+            Tập trung vào giám sát SOC, an ninh mạng và các hoạt động phòng thủ thực tiễn.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Liên hệ</span>
+            </a>
+
+            <a href="https://github.com/nktmnh" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/minh-v%C3%B5-230518383/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile HUD Viewfinder Card -->
+        <div class="hero-card-wrapper">
+          <div class="hero-card">
+            <!-- Viewfinder Camera Frame with Corner Brackets -->
+            <div class="viewfinder-frame">
+              <span class="viewfinder-corner corner-tl"></span>
+              <span class="viewfinder-corner corner-tr"></span>
+              <span class="viewfinder-corner corner-bl"></span>
+              <span class="viewfinder-corner corner-br"></span>
+
+              <img src="assets/images/avatar.jpg" alt="Võ Nhật Minh - Ảnh đại diện" class="viewfinder-img" width="768" height="1024">
+            </div>
+
+            <!-- Profile Info Metadata List -->
+            <div class="card-meta-list">
+              <div class="card-meta-item">
+                <span class="card-meta-label">GITHUB</span>
+                <span class="card-meta-value">
+                  <a href="https://github.com/nktmnh" target="_blank" rel="noopener noreferrer">nktmnh</a>
+                </span>
+              </div>
+
+              <div class="card-meta-item">
+                <span class="card-meta-label">EMAIL</span>
+                <span class="card-meta-value">
+                  <a href="mailto:vonhatminh0209@gmail.com">vonhatminh0209@gmail.com</a>
+                </span>
+              </div>
+
+              <div class="card-meta-item">
+                <span class="card-meta-label">LINKEDIN</span>
+                <span class="card-meta-value">
+                  <a href="https://www.linkedin.com/in/minh-v%C3%B5-230518383/" target="_blank" rel="noopener noreferrer">Võ Nhật Minh</a>
+                </span>
+              </div>
+
+              <div class="card-meta-item">
+                <span class="card-meta-label">CƠ SỞ</span>
+                <span class="card-meta-value">Thành phố Hồ Chí Minh, Việt Nam</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         01 —— GIỚI THIỆU (ABOUT ME)
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container section-grid">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-number">01</div>
+          <h2 class="section-title">Giới thiệu</h2>
+          <p class="section-subtitle">Bối cảnh, các lĩnh vực trọng tâm và công cụ.</p>
+        </div>
+
+        <!-- Section Content -->
+        <div class="section-content">
+          <p class="about-lead">
+            Công việc của tôi tập trung vào việc <strong>chuyển đổi các sự kiện bảo mật thành bằng chứng rõ ràng</strong>: thu thập nhật ký tường lửa, hệ thống phát hiện xâm nhập (IDS), Windows, Linux và ứng dụng; phân loại cảnh báo; đối chiếu dấu thời gian, địa chỉ IP, cổng và giao thức; và ghi lại các phát hiện để công tác ứng phó trở nên nhanh chóng và hiệu quả hơn.
+          </p>
+
+          <p class="about-text">
+            Với định hướng chuyên sâu vào <strong>Blue Team và giám sát an ninh mạng (SOC Tier 1/2)</strong>, tôi không ngừng rèn luyện kỹ năng thực tế qua việc xây dựng Home Lab, thực hành điều tra sự cố trên các nền tảng CTF (TryHackMe, Hack The Box), phân tích nhật ký phân tán và nghiên cứu các kỹ thuật phát hiện xâm nhập mới nhất theo khuôn khổ MITRE ATT&CK.
+          </p>
+
+          <!-- Core Domains Cards Grid -->
+          <div class="core-domains-grid">
+            <div class="domain-card">
+              <div class="domain-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 class="domain-title">Giám sát SOC & Phân loại</h3>
+              <p class="domain-desc">Triage cảnh báo từ SIEM/EDR, loại bỏ cảnh báo giả (False Positives), truy vết nguồn tấn công và lập tài liệu xử lý sự cố.</p>
+            </div>
+
+            <div class="domain-card">
+              <div class="domain-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <h3 class="domain-title">Pháp chứng & Phân tích Log</h3>
+              <p class="domain-desc">Điều tra dấu vết trên Windows Event Logs, Linux Syslog, phân tích gói tin mạng (Wireshark) và trích xuất bằng chứng kỹ thuật số.</p>
+            </div>
+
+            <div class="domain-card">
+              <div class="domain-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="domain-title">Phân tích mã độc tĩnh</h3>
+              <p class="domain-desc">Trích xuất chỉ số xâm phạm (IOCs), giải mã chuỗi ký tự ẩn, soi cấu trúc PE Header và so khớp tập luật YARA phòng thủ.</p>
+            </div>
+
+            <div class="domain-card">
+              <div class="domain-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="domain-title">Gia cố & Tăng cường an ninh</h3>
+              <p class="domain-desc">Thiết lập cấu hình an toàn cho máy chủ, tối ưu hóa chính sách Audit Policy, triển khai Sysmon và giám sát tuân thủ.</p>
+            </div>
+          </div>
+
+          <!-- SOC Workflow Banner -->
+          <div class="workflow-box">
+            <h3 class="workflow-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              <span>Quy trình điều tra & Ứng phó sự cố (NIST SP 800-61)</span>
+            </h3>
+
+            <div class="workflow-steps">
+              <div class="workflow-step">
+                <div class="workflow-step-num">BƯỚC 01</div>
+                <div class="workflow-step-name">Thu thập & Giám sát</div>
+                <div class="workflow-step-desc">Tập trung log từ Endpoint, Network & Tường lửa qua Wazuh / Sysmon.</div>
+              </div>
+
+              <div class="workflow-step">
+                <div class="workflow-step-num">BƯỚC 02</div>
+                <div class="workflow-step-name">Phát hiện & Phân loại</div>
+                <div class="workflow-step-desc">Triage cảnh báo, xác định mức độ rủi ro, phân lập IoC giả/thật.</div>
+              </div>
+
+              <div class="workflow-step">
+                <div class="workflow-step-num">BƯỚC 03</div>
+                <div class="workflow-step-name">Khoanh vùng & Xử lý</div>
+                <div class="workflow-step-desc">Cách ly máy trạm nhiễm, thu hồi thông tin đăng nhập, chặn IP C2.</div>
+              </div>
+
+              <div class="workflow-step">
+                <div class="workflow-step-num">BƯỚC 04</div>
+                <div class="workflow-step-name">Báo cáo & Rút kinh nghiệm</div>
+                <div class="workflow-step-desc">Tài liệu hóa dòng thời gian sự cố, cập nhật Rule ngăn chặn tái diễn.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         02 —— ĐIỂM NỔI BẬT (HIGHLIGHTS & SKILLS)
+         ========================================================================== -->
+    <section class="section" id="highlights">
+      <div class="container section-grid">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-number">02</div>
+          <h2 class="section-title">Điểm nổi bật</h2>
+          <p class="section-subtitle">Kỹ năng chuyên môn, chỉ số thực hành và công nghệ.</p>
+        </div>
+
+        <!-- Section Content -->
+        <div class="section-content">
+          <!-- Quantitative Stats Banner -->
+          <div class="stats-banner">
+            <div class="stat-item">
+              <div class="stat-number">120+</div>
+              <div class="stat-label">Giờ thực hành Lab & Điều tra sự cố</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Kịch bản phân tích cảnh báo SOC & CTF</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number">06+</div>
+              <div class="stat-label">Dự án công cụ & Kịch bản tự động hóa</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Sẵn sàng tiếp nhận cơ hội Thực tập sinh</div>
+            </div>
+          </div>
+
+          <!-- Skills Matrix categorized -->
+          <div class="skills-matrix">
+            <!-- SIEM & Monitoring -->
+            <div class="skill-category">
+              <div class="category-header">
+                <h3 class="category-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  <span>SIEM, IDS/IPS & Giám sát Endpoint</span>
+                </h3>
+              </div>
+              <div class="pill-group">
+                <span class="skill-pill featured">Wazuh SIEM</span>
+                <span class="skill-pill featured">Splunk Enterprise</span>
+                <span class="skill-pill">Elasticsearch / Kibana</span>
+                <span class="skill-pill featured">Sysmon</span>
+                <span class="skill-pill">Suricata IDS</span>
+                <span class="skill-pill">Zeek (Bro)</span>
+                <span class="skill-pill">Snort</span>
+                <span class="skill-pill">pfSense Firewall</span>
+                <span class="skill-pill">MITRE ATT&CK Mapping</span>
+              </div>
+            </div>
+
+            <!-- Digital Forensics & Analysis -->
+            <div class="skill-category">
+              <div class="category-header">
+                <h3 class="category-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                  <span>Pháp chứng số & Phân tích sự cố (DFIR)</span>
+                </h3>
+              </div>
+              <div class="pill-group">
+                <span class="skill-pill featured">Wireshark (pcap triage)</span>
+                <span class="skill-pill featured">Volatility 3</span>
+                <span class="skill-pill">FTK Imager</span>
+                <span class="skill-pill">Autopsy</span>
+                <span class="skill-pill">VirusTotal API</span>
+                <span class="skill-pill">Any.Run / Hybrid-Analysis</span>
+                <span class="skill-pill">YARA Rules</span>
+                <span class="skill-pill">PEStudio / DIE</span>
+                <span class="skill-pill">Oletools</span>
+              </div>
+            </div>
+
+            <!-- Systems & Networking -->
+            <div class="skill-category">
+              <div class="category-header">
+                <h3 class="category-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                  <span>Hệ điều hành, Mạng & Hạ tầng</span>
+                </h3>
+              </div>
+              <div class="pill-group">
+                <span class="skill-pill featured">Windows Server & Active Directory</span>
+                <span class="skill-pill featured">Linux (Ubuntu, Debian, Kali)</span>
+                <span class="skill-pill">TCP/IP & Protocol Analysis</span>
+                <span class="skill-pill">DNS, DHCP, HTTP/S, SSH, RDP</span>
+                <span class="skill-pill">Nmap Network Scanning</span>
+                <span class="skill-pill">Virtualization (VMware, VirtualBox)</span>
+                <span class="skill-pill">Docker Containers</span>
+              </div>
+            </div>
+
+            <!-- Programming & Automation -->
+            <div class="skill-category">
+              <div class="category-header">
+                <h3 class="category-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  <span>Lập trình, Kịch bản tự động hóa & Công cụ</span>
+                </h3>
+              </div>
+              <div class="pill-group">
+                <span class="skill-pill featured">Python (Scapy, Requests, OS)</span>
+                <span class="skill-pill featured">PowerShell Scripting</span>
+                <span class="skill-pill">Bash Shell</span>
+                <span class="skill-pill">C# / .NET (Tooling)</span>
+                <span class="skill-pill">SQL Log Queries</span>
+                <span class="skill-pill">Git / GitHub Version Control</span>
+                <span class="skill-pill">Regex & Log Parsing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         03 —— DỰ ÁN (PROJECTS)
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container section-grid">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-number">03</div>
+          <h2 class="section-title">Dự án</h2>
+          <p class="section-subtitle">Các dự án tiêu biểu, công cụ và mã nguồn thực tế.</p>
+        </div>
+
+        <!-- Section Content -->
+        <div class="section-content">
+          <!-- Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <button class="filter-btn" data-filter="soc">Bảo mật & SOC</button>
+            <button class="filter-btn" data-filter="forensics">Pháp chứng số</button>
+            <button class="filter-btn" data-filter="tools">Công cụ & Tự động hóa</button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="soc">
+              <div class="project-top">
+                <div class="project-badge-bar">
+                  <span class="project-category-tag">SIEM & SOC Triage</span>
+                  <span class="brand-badge">HOME LAB</span>
+                </div>
+                <h3 class="project-title">SOC Alert Triage & Incident Investigation Lab</h3>
+                <p class="project-desc">
+                  Mô hình hạ tầng SOC thu nhỏ hoàn chỉnh kết hợp Wazuh SIEM, Suricata IDS và Sysmon. Giám sát tự động, phân loại cảnh báo Brute-force và phát hiện xâm nhập máy trạm.
+                </p>
+                <div class="project-techs">
+                  <span class="project-tech-tag">Wazuh</span>
+                  <span class="project-tech-tag">Suricata</span>
+                  <span class="project-tech-tag">Sysmon</span>
+                  <span class="project-tech-tag">Active Response</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn" data-modal-target="project1">
+                  <span>Xem chi tiết</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/nktmnh" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="forensics">
+              <div class="project-top">
+                <div class="project-badge-bar">
+                  <span class="project-category-tag">Pháp chứng số</span>
+                  <span class="brand-badge">FORENSICS</span>
+                </div>
+                <h3 class="project-title">Automated Volatility Memory Forensics Analyzer</h3>
+                <p class="project-desc">
+                  Bộ công cụ tự động hóa điều tra bộ nhớ RAM với Volatility 3: dò tìm tiến trình ẩn, trích xuất DLL injected, phân tích kết nối mạng bất thường và tra cứu hash trên VirusTotal.
+                </p>
+                <div class="project-techs">
+                  <span class="project-tech-tag">Volatility 3</span>
+                  <span class="project-tech-tag">Python</span>
+                  <span class="project-tech-tag">VirusTotal API</span>
+                  <span class="project-tech-tag">Memory Triage</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn" data-modal-target="project2">
+                  <span>Xem chi tiết</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/nktmnh" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="tools">
+              <div class="project-top">
+                <div class="project-badge-bar">
+                  <span class="project-category-tag">Mã độc & IOCs</span>
+                  <span class="brand-badge">DEFENSIVE TOOL</span>
+                </div>
+                <h3 class="project-title">Malware Static Triage & IOC Hunter</h3>
+                <p class="project-desc">
+                  Ứng dụng hỗ trợ phân tích sơ bộ mã độc tĩnh: tính toán hash MD5/SHA256, kiểm tra cấu trúc PE Headers, trích xuất IP/URL độc hại và đối chiếu tập luật YARA ngoại tuyến.
+                </p>
+                <div class="project-techs">
+                  <span class="project-tech-tag">C# / .NET</span>
+                  <span class="project-tech-tag">YARA</span>
+                  <span class="project-tech-tag">PE File Format</span>
+                  <span class="project-tech-tag">Entropy Analysis</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn" data-modal-target="project3">
+                  <span>Xem chi tiết</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/nktmnh" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-category="tools">
+              <div class="project-top">
+                <div class="project-badge-bar">
+                  <span class="project-category-tag">Mạng & Giám sát</span>
+                  <span class="brand-badge">PACKET ANALYSIS</span>
+                </div>
+                <h3 class="project-title">Network Traffic Anomaly & Packet Analyzer</h3>
+                <p class="project-desc">
+                  Script Python tự động đọc và xử lý các tập tin pcap, phát hiện kỹ thuật quét cổng (Stealth SYN), rò rỉ dữ liệu qua DNS Exfiltration và xuất báo cáo sự cố chuẩn CEF.
+                </p>
+                <div class="project-techs">
+                  <span class="project-tech-tag">Python (Scapy)</span>
+                  <span class="project-tech-tag">Wireshark / TShark</span>
+                  <span class="project-tech-tag">DNS Tunneling</span>
+                  <span class="project-tech-tag">CEF Format</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn" data-modal-target="project4">
+                  <span>Xem chi tiết</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/nktmnh" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         04 —— PHÒNG THÍ NGHIỆM (LABS & SIMULATIONS)
+         ========================================================================== -->
+    <section class="section" id="labs">
+      <div class="container section-grid">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-number">04</div>
+          <h2 class="section-title">Phòng thí nghiệm</h2>
+          <p class="section-subtitle">Môi trường thực hành, giả lập kịch bản và nghiên cứu.</p>
+        </div>
+
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="labs-list">
+            <!-- Lab 1 -->
+            <div class="lab-card">
+              <div class="lab-meta">
+                <span class="lab-pill">ACTIVE DIRECTORY</span>
+                <span class="article-date">LAB PHÒNG THỦ</span>
+              </div>
+              <h3 class="lab-title">Mô phỏng phát hiện tấn công Kerberoasting & Pass-the-Hash</h3>
+              <p class="lab-desc">
+                Xây dựng Domain Controller Windows Server 2022 và các trạm Windows 10/11. Mô phỏng tấn công trích xuất Kerberos TGS Ticket và di chuyển ngang (Lateral Movement), sau đó thiết lập phát hiện qua Windows Event ID 4769 và cấu hình gMSA để triệt tiêu lỗ hổng.
+              </p>
+              <div class="lab-details-grid">
+                <div>
+                  <div class="lab-detail-title">MÔI TRƯỜNG</div>
+                  <div class="lab-detail-val">Hyper-V / VMware ESXi</div>
+                </div>
+                <div>
+                  <div class="lab-detail-title">LOG NGUỒN</div>
+                  <div class="lab-detail-val">Security Event 4769, 4624</div>
+                </div>
+                <div>
+                  <div class="lab-detail-title">GIẢI PHÁP PHÒNG THỦ</div>
+                  <div class="lab-detail-val">AES Encryption & Tiering Model</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lab 2 -->
+            <div class="lab-card">
+              <div class="lab-meta">
+                <span class="lab-pill">MALWARE SANDBOX</span>
+                <span class="article-date">PHÂN TÍCH TÀI LIỆU</span>
+              </div>
+              <h3 class="lab-title">Phòng phân tích tài liệu lừa đảo Phishing & Trích xuất Macro</h3>
+              <p class="lab-desc">
+                Thiết lập máy ảo phân tích cô lập (Remnux / FLARE-VM) không kết nối internet. Kiểm tra mẫu tài liệu độc hại (.docm / .xlsm), bóc tách mã VBA bị xáo trộn (deobfuscation), truy vết server C2 giả mạo và trích xuất Indicators of Compromise (IoCs).
+              </p>
+              <div class="lab-details-grid">
+                <div>
+                  <div class="lab-detail-title">CÔNG CỤ SỬ DỤNG</div>
+                  <div class="lab-detail-val">Oledump, Olevba, ViperMonkey</div>
+                </div>
+                <div>
+                  <div class="lab-detail-title">MỤC TIÊU</div>
+                  <div class="lab-detail-val">Trích xuất URL/IP C2 an toàn</div>
+                </div>
+                <div>
+                  <div class="lab-detail-title">KẾT QUẢ</div>
+                  <div class="lab-detail-val">Cập nhật danh sách chặn Firewall</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lab 3 -->
+            <div class="lab-card">
+              <div class="lab-meta">
+                <span class="lab-pill">SIEM DETECTION RULES</span>
+                <span class="article-date">RULE ENGINEERING</span>
+              </div>
+              <h3 class="lab-title">Tối ưu hóa và kiểm thử Rule phát hiện trên Splunk & Wazuh</h3>
+              <p class="lab-desc">
+                Chuyển đổi các quy tắc phát hiện mã nguồn mở từ Sigma Rules sang ngôn ngữ SPL của Splunk và XML Rule của Wazuh. Thực hiện kiểm thử bằng công cụ mô phỏng tấn công Atomic Red Team để kiểm tra độ nhạy và loại trừ cảnh báo giả.
+              </p>
+              <div class="lab-details-grid">
+                <div>
+                  <div class="lab-detail-title">CÔNG CỤ KIỂM THỬ</div>
+                  <div class="lab-detail-val">Atomic Red Team</div>
+                </div>
+                <div>
+                  <div class="lab-detail-title">KHUÔN KHỔ</div>
+                  <div class="lab-detail-val">MITRE ATT&CK (T1059, T1053)</div>
+                </div>
+                <div>
+                  <div class="lab-detail-title">HIỆU QUẢ</div>
+                  <div class="lab-detail-val">Giảm 80% cảnh báo rác</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         05 —— BÀI VIẾT (ARTICLES & WRITEUPS)
+         ========================================================================== -->
+    <section class="section" id="articles">
+      <div class="container section-grid">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-number">05</div>
+          <h2 class="section-title">Bài viết</h2>
+          <p class="section-subtitle">Ghi chép kỹ thuật, phân tích tình huống và hướng dẫn thực hành.</p>
+        </div>
+
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="articles-list">
+            <!-- Article 1 -->
+            <article class="article-card" data-modal-target="article1">
+              <div class="article-header">
+                <span class="article-date">THÁNG 10, 2024</span>
+                <span>•</span>
+                <span class="article-readtime">7 phút đọc</span>
+              </div>
+              <h3 class="article-title">Kỹ thuật phân tích nhật ký Windows Event Logs phát hiện leo thang đặc quyền</h3>
+              <p class="article-snippet">
+                Cách điều tra và tương quan các mã sự kiện quan trọng Event ID 4624 (Logon Type 3/10), 4625 (Failed Logon), 4672 (Special Privileges) và 7045 khi hệ thống bị xâm nhập...
+              </p>
+              <div class="article-tags">
+                <span class="article-tag">#SOC</span>
+                <span class="article-tag">#WindowsLogs</span>
+                <span class="article-tag">#Wazuh</span>
+                <span class="article-tag">#Sysmon</span>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card" data-modal-target="article2">
+              <div class="article-header">
+                <span class="article-date">THÁNG 09, 2024</span>
+                <span>•</span>
+                <span class="article-readtime">5 phút đọc</span>
+              </div>
+              <h3 class="article-title">Quy trình trích xuất IOC từ tài liệu Office Macro độc hại mà không cần thực thi</h3>
+              <p class="article-snippet">
+                Hướng dẫn chi tiết phương pháp phân tích tĩnh đối với email phishing đính kèm file Word/Excel. Sử dụng bộ công cụ oletools và ViperMonkey để trích xuất URL C2 an toàn...
+              </p>
+              <div class="article-tags">
+                <span class="article-tag">#MalwareTriage</span>
+                <span class="article-tag">#Phishing</span>
+                <span class="article-tag">#IoC</span>
+                <span class="article-tag">#VBA</span>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card" data-modal-target="article3">
+              <div class="article-header">
+                <span class="article-date">THÁNG 08, 2024</span>
+                <span>•</span>
+                <span class="article-readtime">8 phút đọc</span>
+              </div>
+              <h3 class="article-title">Xây dựng Home Lab an ninh mạng phòng thủ với Wazuh SIEM và pfSense</h3>
+              <p class="article-subtitle-text"></p>
+              <p class="article-snippet">
+                Thiết kế kiến trúc phân chia mạng cô lập (VLAN), cài đặt Wazuh Manager tập trung, cấu hình Suricata qua SPAN Port và thử nghiệm các kịch bản phát hiện xâm nhập...
+              </p>
+              <div class="article-tags">
+                <span class="article-tag">#HomeLab</span>
+                <span class="article-tag">#BlueTeam</span>
+                <span class="article-tag">#pfSense</span>
+                <span class="article-tag">#Suricata</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         06 —— LIÊN HỆ (CONTACT)
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container section-grid">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-number">06</div>
+          <h2 class="section-title">Liên hệ</h2>
+          <p class="section-subtitle">Kết nối trực tiếp và trao đổi cơ hội nghề nghiệp.</p>
+        </div>
+
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="contact-grid">
+            <!-- Left Info Card -->
+            <div class="contact-info-card">
+              <div>
+                <p class="contact-intro">
+                  Tôi luôn sẵn sàng đón nhận các cơ hội <strong>thực tập sinh, học việc hoặc vị trí Junior trong lĩnh vực An ninh mạng / SOC / Blue Team</strong>. Rất mong có dịp được trao đổi và đóng góp vào sự phát triển của đội ngũ!
+                </p>
+
+                <div class="contact-items">
+                  <!-- Email -->
+                  <div class="contact-item">
+                    <div class="contact-icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="contact-item-label">EMAIL</div>
+                      <div class="contact-item-val">
+                        <span>vonhatminh0209@gmail.com</span>
+                        <button class="copy-btn" data-copy="vonhatminh0209@gmail.com" title="Sao chép email">Sao chép</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- GitHub -->
+                  <div class="contact-item">
+                    <div class="contact-icon-box">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="contact-item-label">GITHUB</div>
+                      <div class="contact-item-val">
+                        <a href="https://github.com/nktmnh" target="_blank" rel="noopener noreferrer">github.com/nktmnh</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- LinkedIn -->
+                  <div class="contact-item">
+                    <div class="contact-icon-box">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="contact-item-label">LINKEDIN</div>
+                      <div class="contact-item-val">
+                        <a href="https://www.linkedin.com/in/minh-v%C3%B5-230518383/" target="_blank" rel="noopener noreferrer">linkedin.com/in/minh-võ</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Location -->
+                  <div class="contact-item">
+                    <div class="contact-icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="contact-item-label">ĐỊA ĐIỂM</div>
+                      <div class="contact-item-val">Thành phố Hồ Chí Minh, Việt Nam</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick action -->
+              <div style="padding-top: 16px; border-top: 1px solid var(--border-subtle);">
+                <a href="mailto:vonhatminh0209@gmail.com" class="btn btn-outline" style="width: 100%;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13"></path>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Gửi email trực tiếp</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form Card -->
+            <div class="contact-form-card">
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Họ và tên *</label>
+                  <input type="text" id="form-name" class="form-control" placeholder="Nguyễn Văn A" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email của bạn *</label>
+                  <input type="email" id="form-email" class="form-control" placeholder="example@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject" class="form-label">Tiêu đề liên hệ</label>
+                  <input type="text" id="form-subject" class="form-control" placeholder="Trao đổi cơ hội thực tập sinh / công việc">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Nội dung tin nhắn *</label>
+                  <textarea id="form-message" class="form-control" placeholder="Xin chào Minh, chúng tôi có cơ hội phù hợp với định hướng của bạn..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Gửi tin nhắn</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        © 2024 - 2026 Võ Nhật Minh. Thiết kế theo phong cách Cyber Defense & Blue Team.
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/nktmnh" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/minh-v%C3%B5-230518383/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="#hero" class="back-to-top">
+          <span>Lên đầu trang</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       UNIVERSAL MODAL DIALOG
+       ========================================================================== -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-dialog" id="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" type="button" aria-label="Đóng cửa sổ">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Content injected dynamically via js/main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
